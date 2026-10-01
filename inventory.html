@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Store Inventory &amp; Complete Catalog — Rab A Golden Heritage</title>
+  <meta name="description" content="Explore the complete warehouse inventory of Rab A Golden Heritage. 19 varieties of MDF boards, blockboards, high gloss HDF, edge tape, handles, drawer runners, screws, and workshop supplies." />
+
+  <!-- Google Fonts: Inter & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet" />
+
+  <!-- Site Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. TOP ANNOUNCEMENT BAR
+       ========================================================================= -->
+  <div class="announcement-bar" role="region" aria-label="Announcement">
+    <div class="site-container announcement-inner">
+      <div class="announcement-left">
+        <span class="pulse-dot" aria-hidden="true"></span>
+        <span class="announcement-text">
+          Wholesale Furniture Boards &amp; Hardware &bull; Over 39 Items in Warehouse Stock &bull; Fast Delivery Across Nigeria
+        </span>
+      </div>
+      <div class="announcement-right">
+        <a href="https://wa.me/2348012345678?text=Hello%20Rab%20A%20Golden%20Heritage,%20I%20would%20like%20to%20enquire%20about%20your%20boards%20and%20hardware" target="_blank" rel="noopener noreferrer" class="announcement-link">
+          <span>WhatsApp Quick Help</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. PRIMARY NAVIGATION HEADER
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="site-container header-inner">
+
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" id="brand-logo" aria-label="Rab A Golden Heritage Home">
+        <div class="logo-badge-icon" aria-hidden="true">
+          <span class="logo-letter">R</span>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-main">Rab A</span>
+          <span class="logo-sub">Golden Heritage</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" id="main-nav" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="inventory.html" class="nav-link active">Store Inventory</a>
+        <a href="inventory.html?cat=mdf" class="nav-link">MDF Boards</a>
+        <a href="inventory.html?cat=wallpanel" class="nav-link">Wall Panels</a>
+        <a href="index.html#finished-works" class="nav-link">Finished Works</a>
+        <a href="index.html#featured-accessories" class="nav-link">Accessories</a>
+        <a href="index.html#why-choose" class="nav-link">About Us</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Search Box & Cart Trigger -->
+      <div class="header-actions">
+        <div class="header-search" id="header-search">
+          <div class="search-input-wrap">
+            <input 
+              type="text" 
+              id="search-input" 
+              placeholder="Search products (e.g. Amala, Wenge, hinges...)" 
+              aria-label="Search products"
+              autocomplete="off"
+            />
+          </div>
+          <button class="search-submit-btn" id="search-btn" aria-label="Submit search">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Cart Button with Counter Badge -->
+        <button class="cart-trigger-btn" id="cart-trigger" aria-label="View Order and Enquiry List">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2a1508" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-badge-count" id="cart-badge-count">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Slide Drawer -->
+    <div class="mobile-nav-menu" id="mobile-nav-menu">
+      <div class="mobile-search-bar">
+        <input type="text" id="mobile-search-input" placeholder="Search MDF, hinges, edge tape..." />
+        <button id="mobile-search-btn" class="search-submit-btn" aria-label="Search">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-nav-links">
+        <a href="index.html" class="mobile-nav-link">Home</a>
+        <a href="inventory.html" class="mobile-nav-link active">Store Inventory</a>
+        <a href="inventory.html?cat=mdf" class="mobile-nav-link">MDF Boards</a>
+        <a href="inventory.html?cat=wallpanel" class="mobile-nav-link">Wall Panels</a>
+        <a href="index.html#finished-works" class="mobile-nav-link">Finished Works</a>
+        <a href="index.html#featured-accessories" class="mobile-nav-link">Accessories</a>
+        <a href="index.html#why-choose" class="mobile-nav-link">About Us</a>
+        <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+      </nav>
+      <div class="mobile-contact-quick">
+        <p>📞 +234 801 234 5678</p>
+        <p>📍 Km 12, Lagos-Ibadan Expressway, Lagos</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       3. INVENTORY HERO & BREADCRUMB
+       ========================================================================= -->
+  <section class="inventory-hero">
+    <div class="site-container">
+      <div class="inventory-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Store Inventory &amp; Catalog</span>
+      </div>
+
+      <h1 class="inventory-hero-title">
+        Rab A Golden Heritage <span class="inventory-hero-title-serif">Store Inventory</span>
+      </h1>
+      <p class="inventory-hero-subtitle">
+        Spacious warehouse catalog of all furniture boards, fittings, edge banding, and accessories currently in stock. Every item is detailed with finish types, dimensions, applications, and direct WhatsApp quotation.
+      </p>
+
+      <!-- Custom Board Cutting Banner Callout -->
+      <div class="inventory-cutting-banner">
+        <div class="inv-cut-badge">
+          <span class="pulse-dot-gold" aria-hidden="true"></span>
+          <span>WORKSHOP JOINERY SERVICE</span>
+        </div>
+        <div class="inv-cut-content">
+          <div class="inv-cut-text-group">
+            <h3 class="inv-cut-heading">Need Custom Board Cutting &amp; Edge Banding?</h3>
+            <p class="inv-cut-desc">Order any board from our warehouse cut to your exact workshop dimensions with 1mm or 2mm PVC edge taping applied. Enter your cut list for an instant WhatsApp quotation.</p>
+          </div>
+          <a href="index.html#cutting-service" class="btn btn-hero-dark btn-inv-cut-cta">
+            <span>Open Cut List Builder</span>
+            <span aria-hidden="true">➔</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. STICKY FILTER & SEARCH TOOLBAR
+       ========================================================================= -->
+  <section class="inventory-toolbar-section" id="inventory-toolbar-section">
+    <div class="site-container">
+      <div class="inventory-toolbar-card">
+
+        <!-- Top Row: Search & View Controls -->
+        <div class="toolbar-top-row">
+          <!-- Search Input -->
+          <div class="inventory-search-wrap">
+            <svg class="inv-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input 
+              type="text" 
+              id="inv-search-input" 
+              placeholder="Search by board name (e.g. Amala, Akala, Wenge, Runner, Screw)..." 
+              autocomplete="off"
+            />
+            <button id="inv-search-clear" class="inventory-search-clear" aria-label="Clear search">&times;</button>
+          </div>
+
+          <!-- Right Controls: Results Count & View Toggle -->
+          <div class="toolbar-controls-right">
+            <span class="inventory-results-count" id="inv-results-count">Showing 39 items</span>
+
+            <div class="view-toggle-wrap">
+              <button class="view-btn active" id="view-grid-btn" aria-label="Spacious Grid View">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span>Grid View</span>
+              </button>
+              <button class="view-btn" id="view-list-btn" aria-label="Detailed List View">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="8" y1="6" x2="21" y2="6"></line>
+                  <line x1="8" y1="12" x2="21" y2="12"></line>
+                  <line x1="8" y1="18" x2="21" y2="18"></line>
+                  <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                  <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                  <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                </svg>
+                <span>List View</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Row: Category Filter Pills with Item Badges -->
+        <div class="toolbar-pills-row" id="inv-category-pills">
+          <button class="inv-pill active" data-cat="all">All Items <span class="inv-pill-count">39</span></button>
+          <button class="inv-pill" data-cat="mdf">MDF Boards <span class="inv-pill-count">19</span></button>
+          <button class="inv-pill" data-cat="blockboard">Blockboard (B/B) <span class="inv-pill-count">4</span></button>
+          <button class="inv-pill" data-cat="wallpanel">Wall Panels <span class="inv-pill-count">4</span></button>
+          <button class="inv-pill" data-cat="special">Special Boards <span class="inv-pill-count">4</span></button>
+          <button class="inv-pill" data-cat="edge">Edge Banding <span class="inv-pill-count">4</span></button>
+          <button class="inv-pill" data-cat="handles">Handles <span class="inv-pill-count">4</span></button>
+          <button class="inv-pill" data-cat="drawer">Drawer Hardware <span class="inv-pill-count">2</span></button>
+          <button class="inv-pill" data-cat="hinges">Hinges &amp; Brackets <span class="inv-pill-count">3</span></button>
+          <button class="inv-pill" data-cat="locks">Locks &amp; Keys <span class="inv-pill-count">2</span></button>
+          <button class="inv-pill" data-cat="screws">Screws <span class="inv-pill-count">3</span></button>
+          <button class="inv-pill" data-cat="adhesives">Adhesives <span class="inv-pill-count">2</span></button>
+          <button class="inv-pill" data-cat="workshop">Workshop Tools <span class="inv-pill-count">4</span></button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. MAIN INVENTORY DISPLAY (SPACIOUS GRID / DETAILED LIST)
+       ========================================================================= -->
+  <main class="inventory-main-section">
+    <div class="site-container">
+      
+      <!-- Container for dynamic injection -->
+      <div class="inventory-spacious-grid" id="inventory-display-container">
+        <!-- Rendered dynamically with all details visible via app.js -->
+      </div>
+
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       5b. FINISHED WORKS INSPIRATION CALLOUT
+       ========================================================================= -->
+  <section class="site-section py-0" style="padding-top: 10px; padding-bottom: 30px;">
+    <div class="site-container">
+      <div class="inventory-cutting-banner">
+        <div class="inv-cut-badge">
+          <span class="pulse-dot-gold" aria-hidden="true"></span>
+          <span>DESIGN POSSIBILITIES &amp; INSPIRATION</span>
+        </div>
+        <div class="inv-cut-content">
+          <div class="inv-cut-text-group">
+            <h3 class="inv-cut-heading">See What You Can Build with Our Boards &amp; Fittings</h3>
+            <p class="inv-cut-desc">From bespoke dual-tone acrylic kitchens and flush interior doors to luxury walk-in wardrobes and acoustic fluted media walls. Explore finished master projects crafted with Rab A Golden materials.</p>
+          </div>
+          <a href="index.html#finished-works" class="btn btn-inv-cut-cta">
+            <span>Explore Finished Works Showcase</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. WHATSAPP ENQUIRY BANNER
+       ========================================================================= -->
+  <section class="whatsapp-banner-section">
+    <div class="site-container">
+      <div class="whatsapp-card-box">
+        <div class="whatsapp-text-side">
+          <h2 class="whatsapp-card-title">Need custom sizes, truckload bulk orders, or thickness inquiries?</h2>
+          <p class="whatsapp-card-sub">Chat directly with Rab A Golden sales engineers for rapid quotations and warehouse loading coordination.</p>
+        </div>
+        <div class="whatsapp-btn-side">
+          <a href="https://wa.me/2347087823565?text=Hello%20Rab%20A%20Golden,%20I%20would%20like%20to%20place%20a%20bulk%20enquiry%20for%20boards%20and%20hardware" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-pill">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.071.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"></path>
+            </svg>
+            <span>Chat on WhatsApp</span>
+            <span class="arrow-glyph">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. SITE FOOTER
+       ========================================================================= -->
+  <footer class="site-footer" id="contact">
+    <div class="site-container footer-inner">
+
+      <!-- Column 1: Brand Info & Socials -->
+      <div class="footer-col footer-brand-col">
+        <div class="brand-logo footer-logo">
+          <div class="logo-badge-icon" aria-hidden="true">
+            <span class="logo-letter">R</span>
+          </div>
+          <div class="logo-text-group">
+            <span class="logo-main text-white">Rab A</span>
+            <span class="logo-sub text-gold">Golden Heritage</span>
+          </div>
+        </div>
+        <p class="footer-brand-bio">
+          Your trusted source for furniture boards, accessories and hardware.<br />
+          Building better spaces, together.
+        </p>
+        <div class="footer-social-links" aria-label="Social media">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Instagram">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="Facebook">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="TikTok">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31 0 2.6.45 3.63 1.25.1.08.18.17.26.25 1.04 1.04 1.58 2.45 1.58 3.92v.07a6.38 6.38 0 0 0 3.73 1.25v3.42a9.7 9.7 0 0 1-3.77-1.04v7.71a7.86 7.86 0 1 1-7.86-7.86c.54 0 1.07.05 1.58.17v3.52a4.4 4.4 0 1 0 2.86 4.17V0l-2.01.02z"></path></svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="YouTube">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">Quick Links</h3>
+        <ul class="footer-nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="inventory.html">Full Store Inventory</a></li>
+          <li><a href="inventory.html?cat=mdf">MDF Boards (19)</a></li>
+          <li><a href="inventory.html?cat=blockboard">Blockboard (B/B)</a></li>
+          <li><a href="index.html#why-choose">About Us</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Warehouse Categories -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">Warehouse Categories</h3>
+        <ul class="footer-nav-list">
+          <li><a href="inventory.html?cat=mdf">MDF Boards (19 Types)</a></li>
+          <li><a href="inventory.html?cat=special">HDF &amp; High Gloss Panels</a></li>
+          <li><a href="inventory.html?cat=edge">PVC Edge Banding Tapes</a></li>
+          <li><a href="inventory.html?cat=drawer">Drawer Runners &amp; Slides</a></li>
+          <li><a href="inventory.html?cat=hinges">Hydraulic Soft-Close Hinges</a></li>
+          <li><a href="inventory.html?cat=adhesives">Industrial Gums &amp; Sealants</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact Us -->
+      <div class="footer-col">
+        <h3 class="footer-col-title">Contact Us</h3>
+        <div class="footer-contact-list">
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">📞</span>
+            <a href="tel:+2348012345678" class="contact-value">+234 801 234 5678</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">✉</span>
+            <a href="mailto:hello@rabagoldenheritage.com" class="contact-value">hello@rabagoldenheritage.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon" aria-hidden="true">📍</span>
+            <span class="contact-value">Km 12, Lagos-Ibadan Expressway, Lagos, Nigeria</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright Bar -->
+    <div class="footer-bottom-bar">
+      <div class="site-container footer-bottom-inner">
+        <p class="copyright-text">&copy; 2026 Rab A Golden Heritage. All rights reserved.</p>
+        <p class="footer-motto">Building Better Spaces, Together.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       7b. PRODUCT DETAILS & QUICK ORDER MODAL
+       ========================================================================= -->
+  <div class="product-modal-overlay" id="product-modal" aria-hidden="true">
+    <div class="product-modal-card">
+      <button class="modal-close-btn" id="close-product-modal" aria-label="Close">&times;</button>
+      <div class="product-modal-grid">
+        <div class="product-modal-image-box">
+          <img id="modal-product-img" src="assets/rab-a-golden/mdf-boards.png" alt="Product" />
+        </div>
+        <div class="product-modal-details">
+          <span class="product-modal-badge" id="modal-product-cat">MDF Board</span>
+          <h2 class="product-modal-title" id="modal-product-title">Ara Marble White</h2>
+          <div class="product-modal-rate-tag">Wholesale Quotation on Request</div>
+          <p class="product-modal-desc" id="modal-product-desc">
+            Premium quality furniture board supplied by Rab A Golden Heritage. High density, smooth finish, trusted by professionals across Nigeria.
+          </p>
+          <div class="product-modal-qty-row">
+            <label for="modal-qty-count">Quantity:</label>
+            <div class="qty-stepper">
+              <button id="modal-qty-minus">-</button>
+              <span id="modal-qty-count">1</span>
+              <button id="modal-qty-plus">+</button>
+            </div>
+          </div>
+          <div class="product-modal-actions">
+            <button class="btn btn-hero-dark" id="modal-add-cart-btn">
+              <span>Add to Enquiry List</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line></svg>
+            </button>
+            <a id="modal-whatsapp-enquiry" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-pill">
+              <span>Enquire on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       8. SHOPPING CART / ENQUIRY LIST DRAWER (SYNCS WITH LOCALSTORAGE)
+       ========================================================================= -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Order and Enquiry List" aria-hidden="true">
+    <div class="cart-drawer-header">
+      <div class="cart-drawer-title-wrap">
+        <h2>Your Enquiry List</h2>
+        <span class="cart-items-counter" id="cart-items-counter">(0 items)</span>
+      </div>
+      <button class="cart-close-btn" id="cart-close-btn" aria-label="Close">&times;</button>
+    </div>
+
+    <div class="cart-items-list" id="cart-items-list">
+      <!-- Injected dynamically via app.js -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <div class="cart-subtotal-row">
+        <span>Total Selected Items:</span>
+        <strong id="cart-total-items-count">0 items</strong>
+      </div>
+      <p class="cart-shipping-note">Quotations are based on current market value and thickness. Submit your list for an instant quote.</p>
+      <button class="btn btn-checkout-whatsapp" id="cart-checkout-whatsapp-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.071.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"></path>
+        </svg>
+        <span>Send Enquiry on WhatsApp</span>
+      </button>
+      <button class="btn btn-continue-shopping" id="cart-continue-btn">
+        Continue Browsing
+      </button>
+    </div>
+  </aside>
+
+  <!-- Notification Toast -->
+  <div class="notification-toast" id="notification-toast" role="alert" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message" id="toast-message">Added to enquiry list</span>
+  </div>
+
+  <!-- Main Application Script -->
+  <script src="app.js"></script>
+</body>
+</html>
