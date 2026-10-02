@@ -845,7 +845,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
       message += `\nTotal Items: ${totalCount}\n\nPlease let me know your current quotation and delivery options. Thank you!`;
 
-      const encodedUrl = `https://wa.me/2347087823565?text=${encodeURIComponent(message)}`;
+      const encodedUrl = `https://wa.me/2348138781961?text=${encodeURIComponent(message)}`;
       window.open(encodedUrl, '_blank');
     });
   }
@@ -882,7 +882,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (modalWhatsappEnquiry) {
       const text = `Hello Rab A Golden, I would like to enquire about availability and quotation for "${product.name}". Please provide details.`;
-      modalWhatsappEnquiry.href = `https://wa.me/2347087823565?text=${encodeURIComponent(text)}`;
+      modalWhatsappEnquiry.href = `https://wa.me/2348138781961?text=${encodeURIComponent(text)}`;
     }
 
 
@@ -1111,7 +1111,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <!-- Card Footer: Direct Enquire Button Only -->
         <div class="youceef-card-footer">
-          <a href="https://wa.me/2347087823565?text=${encodedEnquiry}" target="_blank" rel="noopener noreferrer" class="btn-youceef-enquire" aria-label="Enquire for ${item.name} on WhatsApp">
+          <a href="https://wa.me/2348138781961?text=${encodedEnquiry}" target="_blank" rel="noopener noreferrer" class="btn-youceef-enquire" aria-label="Enquire for ${item.name} on WhatsApp">
             <span>Enquire on WhatsApp</span>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.071.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
           </a>
@@ -1163,7 +1163,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <!-- Right Actions Column: Direct Enquire Button Only -->
         <div class="youceef-list-actions-col">
-          <a href="https://wa.me/2347087823565?text=${encodedEnquiry}" target="_blank" rel="noopener noreferrer" class="btn-youceef-enquire" style="width: 100%;" aria-label="Enquire for ${item.name} on WhatsApp">
+          <a href="https://wa.me/2348138781961?text=${encodedEnquiry}" target="_blank" rel="noopener noreferrer" class="btn-youceef-enquire" style="width: 100%;" aria-label="Enquire for ${item.name} on WhatsApp">
             <span>Enquire on WhatsApp</span>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.071.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
           </a>
@@ -1515,7 +1515,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             <!-- Modish Dual Action Buttons -->
             <div class="modish-card-actions">
-              <a href="https://wa.me/2347087823565?text=${encodedOrder}" target="_blank" rel="noopener noreferrer" class="btn-modish-whatsapp" aria-label="Order ${item.name} via WhatsApp">
+              <a href="https://wa.me/2348138781961?text=${encodedOrder}" target="_blank" rel="noopener noreferrer" class="btn-modish-whatsapp" aria-label="Order ${item.name} via WhatsApp">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.071.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
                 </svg>
@@ -1574,7 +1574,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           <!-- Right Actions Column -->
           <div class="modish-list-actions">
-            <a href="https://wa.me/2347087823565?text=${encodedOrder}" target="_blank" rel="noopener noreferrer" class="btn-modish-whatsapp" aria-label="Order ${item.name} via WhatsApp">
+            <a href="https://wa.me/2348138781961?text=${encodedOrder}" target="_blank" rel="noopener noreferrer" class="btn-modish-whatsapp" aria-label="Order ${item.name} via WhatsApp">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.071.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
               </svg>
@@ -2054,7 +2054,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         const text = formatCuttingScheduleText();
         const encoded = encodeURIComponent(text);
-        window.open(`https://wa.me/2348012345678?text=${encoded}`, '_blank');
+        window.open(`https://wa.me/2348138781961?text=${encoded}`, '_blank');
       });
     }
 
@@ -2127,7 +2127,7 @@ document.addEventListener('DOMContentLoaded', () => {
               </div>
               <div style="font-size: 12px; text-align: right; color: #5a4535;">
                 <div>Date: ${new Date().toLocaleDateString()}</div>
-                <div>Lagos, Nigeria</div>
+                <div>Ilaro, Ogun State, Nigeria</div>
               </div>
             </div>
 
@@ -2171,7 +2171,7 @@ document.addEventListener('DOMContentLoaded', () => {
             ${notes ? `<div class="notes"><strong>Special Workshop Instructions:</strong><br />${notes}</div>` : ''}
 
             <div class="footer">
-              Rab A Golden Heritage &bull; Everything for Furniture Makers, Under One Roof &bull; Tel: +234 801 234 5678
+              Rab A Golden Heritage &bull; Everything for Furniture Makers, Under One Roof &bull; Tel / WhatsApp: +234 813 878 1961 (Main) &bull; +234 803 464 5669
             </div>
 
             <script>
